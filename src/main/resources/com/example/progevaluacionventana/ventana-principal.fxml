@@ -13,20 +13,26 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity"
+      minHeight="-Infinity" minWidth="-Infinity"
+      prefHeight="400.0" prefWidth="600.0"
+      xmlns="http://javafx.com/javafx/26"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.progevaluacionventana.VentanaPrincipalSources.VentanaPrincipalController">
 
     <children>
-        <MenuBar layoutX="0.0" layoutY="0.0" prefHeight="25.0" prefWidth="600.0">
+        <MenuBar layoutX="0.0" layoutY="0.0"
+                 prefHeight="25.0" prefWidth="600.0">
             <menus>
                 <Menu text="Archivo">
                     <items>
-                        <MenuItem text="Salir" />
+                        <MenuItem onAction="#salir" text="Salir" />
                     </items>
                 </Menu>
                 <Menu text="Clientes">
                     <items>
-                        <MenuItem text="Registrar cliente" />
-                        <MenuItem text="Consultar clientes" />
+                        <MenuItem onAction="#abrirRegistro" text="Registrar cliente" />
+                        <MenuItem onAction="#abrirConsulta" text="Consultar clientes" />
                     </items>
                 </Menu>
             </menus>
@@ -34,8 +40,8 @@
 
         <ToolBar layoutY="26.0" prefHeight="57.0" prefWidth="600.0">
             <items>
-                <Button text="Registrar cliente" />
-                <Button text="Consultar clientes" />
+                <Button onAction="#abrirRegistro" text="Registrar cliente" />
+                <Button onAction="#abrirConsulta" text="Consultar clientes" />
             </items>
         </ToolBar>
 
@@ -43,11 +49,17 @@
             <font><Font size="24.0" /></font>
         </Label>
 
-        <Button layoutX="42.0" layoutY="187.0" prefHeight="46.0" prefWidth="210.0" text="Registrar cliente">
+        <Button layoutX="42.0" layoutY="187.0"
+                onAction="#abrirRegistro"
+                prefHeight="46.0" prefWidth="210.0"
+                text="Registrar cliente">
             <font><Font size="17.0" /></font>
         </Button>
 
-        <Button layoutX="335.0" layoutY="187.0" prefHeight="46.0" prefWidth="210.0" text="Consultar clientes">
+        <Button layoutX="335.0" layoutY="187.0"
+                onAction="#abrirConsulta"
+                prefHeight="46.0" prefWidth="210.0"
+                text="Consultar clientes">
             <font><Font size="17.0" /></font>
         </Button>
 
@@ -55,7 +67,10 @@
             <font><Font size="16.0" /></font>
         </Label>
 
-        <ListView layoutX="27.0" layoutY="288.0" prefHeight="83.0" prefWidth="547.0">
+        <ListView fx:id="listaActividad"
+                  onMouseClicked="#mostrarActividad"
+                  layoutX="27.0" layoutY="288.0"
+                  prefHeight="83.0" prefWidth="547.0">
             <items>
                 <FXCollections fx:factory="observableArrayList">
                     <String fx:value="Menú principal abierto" />
@@ -64,7 +79,8 @@
             <contextMenu>
                 <ContextMenu>
                     <items>
-                        <MenuItem text="actividad reciente" />
+                        <MenuItem onAction="#copiarActividad"
+                                  text="Copiar actividad" />
                     </items>
                 </ContextMenu>
             </contextMenu>

@@ -12,69 +12,110 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="631.0" prefWidth="712.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.progevaluacionventana.RegistroClienteSources.RegistroClienteController">
+<AnchorPane prefHeight="631.0" prefWidth="712.0"
+            xmlns="http://javafx.com/javafx/26"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.progevaluacionventana.RegistroClienteSources.RegistroClienteController">
+
    <children>
       <Label layoutX="258.0" layoutY="27.0" text="Registro de cliente">
-         <font>
-            <Font name="Serif Regular" size="26.0" />
-         </font>
+         <font><Font name="Serif Regular" size="26.0" /></font>
       </Label>
-      <Line endX="575.3999633789062" endY="-7.62939453125E-6" layoutX="115.0" layoutY="68.0" startX="-93.40000915527344" startY="-7.62939453125E-6" />
-      <Label layoutX="21.0" layoutY="85.0" prefHeight="30.0" prefWidth="144.0" text="Nombres del cliente :">
-         <font>
-            <Font name="Segoe UI" size="14.0" />
-         </font>
+
+      <Line endX="575.3999633789062" endY="-7.62939453125E-6"
+            layoutX="115.0" layoutY="68.0"
+            startX="-93.40000915527344" startY="-7.62939453125E-6" />
+
+      <Label layoutX="21.0" layoutY="85.0" prefHeight="30.0"
+             prefWidth="144.0" text="Nombres del cliente :">
+         <font><Font name="Segoe UI" size="14.0" /></font>
       </Label>
-      <TextField fx:id="txtNombresCliente" layoutX="177.0" layoutY="85.0" prefHeight="30.0" prefWidth="372.0" promptText="Ingrese sus dos nombres..." />
-      <Label layoutX="21.0" layoutY="128.0" prefHeight="30.0" prefWidth="144.0" text="Apellidos del cliente :">
-         <font>
-            <Font name="Segoe UI" size="14.0" />
-         </font>
+      <TextField fx:id="txtNombresCliente" layoutX="177.0"
+                 layoutY="85.0" prefHeight="30.0" prefWidth="372.0"
+                 promptText="Ingrese sus dos nombres..." />
+
+      <Label layoutX="21.0" layoutY="128.0" prefHeight="30.0"
+             prefWidth="144.0" text="Apellidos del cliente :">
+         <font><Font name="Segoe UI" size="14.0" /></font>
       </Label>
-      <TextField fx:id="txtApellidosCliente" layoutX="177.0" layoutY="128.0" prefHeight="30.0" prefWidth="372.0" promptText="Ingrese sus dos apellidos..." />
-      <Label layoutX="21.0" layoutY="174.0" prefHeight="30.0" prefWidth="144.0" text="Tipo de cliente :">
-         <font>
-            <Font name="Segoe UI" size="15.0" />
-         </font>
+      <TextField fx:id="txtApellidosCliente" layoutX="177.0"
+                 layoutY="128.0" prefHeight="30.0" prefWidth="372.0"
+                 promptText="Ingrese sus dos apellidos..." />
+
+      <Label layoutX="21.0" layoutY="174.0" prefHeight="30.0"
+             prefWidth="144.0" text="Tipo de cliente :">
+         <font><Font name="Segoe UI" size="15.0" /></font>
       </Label>
-      <ComboBox fx:id="cmbTipoCliente" layoutX="177.0" layoutY="177.0" prefHeight="23.0" prefWidth="172.0" promptText="Ingrese su tipo de cliente.." />
-      <ComboBox fx:id="cmbCuidadCliente" layoutX="177.0" layoutY="215.0" prefHeight="23.0" prefWidth="172.0" promptText="Ingrese su cuidad..." />
-      <Label layoutX="21.0" layoutY="212.0" prefHeight="30.0" prefWidth="144.0" text="Cuidad : ">
-         <font>
-            <Font name="Segoe UI" size="15.0" />
-         </font>
+      <ComboBox fx:id="cmbTipoCliente" layoutX="177.0"
+                layoutY="177.0" prefHeight="23.0" prefWidth="172.0"
+                promptText="Seleccione tipo" />
+
+      <Label layoutX="21.0" layoutY="212.0" prefHeight="30.0"
+             prefWidth="144.0" text="Ciudad :">
+         <font><Font name="Segoe UI" size="15.0" /></font>
       </Label>
-      <Label layoutX="21.0" layoutY="258.0" prefHeight="30.0" prefWidth="144.0" text="Fecha de nacimiento :">
-         <font>
-            <Font name="Segoe UI" size="15.0" />
-         </font>
+      <ComboBox fx:id="cmbCuidadCliente" layoutX="177.0"
+                layoutY="215.0" prefHeight="23.0" prefWidth="172.0"
+                promptText="Seleccione ciudad" />
+
+      <Label layoutX="21.0" layoutY="258.0" prefHeight="30.0"
+             prefWidth="144.0" text="Fecha de nacimiento :">
+         <font><Font name="Segoe UI" size="15.0" /></font>
       </Label>
-      <DatePicker fx:id="dtpFechaNacimientoCliente" layoutX="177.0" layoutY="261.0" prefHeight="23.0" prefWidth="172.0" promptText="Ingrese su fecha de nacimiento" />
-      <Label layoutX="21.0" layoutY="302.0" prefHeight="30.0" prefWidth="144.0" text="Tipo de solicitud :">
-         <font>
-            <Font name="Segoe UI" size="15.0" />
-         </font>
+      <DatePicker fx:id="dtpFechaNacimientoCliente"
+                  layoutX="177.0" layoutY="261.0"
+                  prefHeight="23.0" prefWidth="172.0"
+                  promptText="Ingrese su fecha de nacimiento" />
+
+      <Label layoutX="21.0" layoutY="302.0" prefHeight="30.0"
+             prefWidth="144.0" text="Tipo de solicitud :">
+         <font><Font name="Segoe UI" size="15.0" /></font>
       </Label>
-      <RadioButton layoutX="177.0" layoutY="309.0" mnemonicParsing="false" text="RadioButton" />
-      <RadioButton layoutX="276.0" layoutY="309.0" mnemonicParsing="false" text="RadioButton" />
-      <RadioButton layoutX="385.0" layoutY="309.0" mnemonicParsing="false" text="RadioButton" />
-      <Label layoutX="21.0" layoutY="343.0" prefHeight="30.0" prefWidth="144.0" text="Servicios de interes  :">
-         <font>
-            <Font name="Segoe UI" size="15.0" />
-         </font>
+      <RadioButton fx:id="rbConsulta" layoutX="177.0"
+                   layoutY="309.0" text="Consulta" />
+      <RadioButton fx:id="rbReclamo" layoutX="276.0"
+                   layoutY="309.0" text="Reclamo" />
+      <RadioButton fx:id="rbSolicitud" layoutX="385.0"
+                   layoutY="309.0" text="Solicitud" />
+
+      <Label layoutX="21.0" layoutY="343.0" prefHeight="30.0"
+             prefWidth="144.0" text="Servicios de interés :">
+         <font><Font name="Segoe UI" size="15.0" /></font>
       </Label>
-      <CheckBox layoutX="177.0" layoutY="350.0" mnemonicParsing="false" text="CheckBox" />
-      <CheckBox layoutX="276.0" layoutY="350.0" mnemonicParsing="false" text="CheckBox" />
-      <CheckBox layoutX="385.0" layoutY="350.0" mnemonicParsing="false" text="CheckBox" />
-      <ImageView fitHeight="175.0" fitWidth="262.0" layoutX="428.0" layoutY="415.0" pickOnBounds="true" preserveRatio="true" />
-      <Line endX="575.3999633789062" endY="-7.62939453125E-6" layoutX="114.0" layoutY="395.0" startX="-93.40000915527344" startY="-7.62939453125E-6" />
-      <Label layoutX="20.0" layoutY="452.0" prefHeight="30.0" prefWidth="185.0" text="Seleccione su fotografia :">
-         <font>
-            <Font name="Segoe UI" size="15.0" />
-         </font>
+      <CheckBox fx:id="chkSoporte" layoutX="177.0"
+                layoutY="350.0" text="Soporte" />
+      <CheckBox fx:id="chkMantenimiento" layoutX="276.0"
+                layoutY="350.0" text="Mantenimiento" />
+      <CheckBox fx:id="chkInstalacion" layoutX="425.0"
+                layoutY="350.0" text="Instalación" />
+
+      <Line endX="575.3999633789062" endY="-7.62939453125E-6"
+            layoutX="114.0" layoutY="395.0"
+            startX="-93.40000915527344" startY="-7.62939453125E-6" />
+
+      <Label layoutX="20.0" layoutY="452.0"
+             prefHeight="30.0" prefWidth="185.0"
+             text="Seleccione su fotografía :">
+         <font><Font name="Segoe UI" size="15.0" /></font>
       </Label>
-      <TextField layoutX="20.0" layoutY="491.0" prefHeight="23.0" prefWidth="314.0" />
-      <Button fx:id="btnSeleccionarFotoDirectorio" layoutX="345.0" layoutY="491.0" mnemonicParsing="false" text="Subir foto.." />
-      <Button fx:id="btnGuardarRegistroCliente" layoutX="307.0" layoutY="590.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="110.0" text="Guardar registro" />
+      <TextField fx:id="txtRutaFoto" layoutX="20.0"
+                 layoutY="491.0" prefHeight="23.0"
+                 prefWidth="314.0" />
+      <Button layoutX="345.0" layoutY="491.0"
+              onAction="#seleccionarFoto" text="Subir foto.." />
+      <ImageView fx:id="vistaFoto" fitHeight="175.0"
+                 fitWidth="262.0" layoutX="428.0"
+                 layoutY="415.0" pickOnBounds="true"
+                 preserveRatio="true" />
+
+      <Button layoutX="197.0" layoutY="590.0"
+              onAction="#guardar" prefHeight="27.0"
+              prefWidth="110.0" text="Guardar" />
+      <Button layoutX="312.0" layoutY="590.0"
+              onAction="#limpiar" prefHeight="27.0"
+              prefWidth="100.0" text="Limpiar" />
+      <Button layoutX="417.0" layoutY="590.0"
+              onAction="#cancelar" prefHeight="27.0"
+              prefWidth="100.0" text="Cancelar" />
    </children>
 </AnchorPane>

@@ -13,14 +13,10 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity"
-      minHeight="-Infinity" minWidth="-Infinity"
-      prefHeight="400.0" prefWidth="600.0"
-      xmlns="http://javafx.com/javafx/26"
-      xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1">
 
     <children>
-        <MenuBar layoutX="0.0" layoutY="0.0" prefWidth="600.0">
+        <MenuBar layoutX="0.0" layoutY="0.0" prefHeight="25.0" prefWidth="600.0">
             <menus>
                 <Menu text="Archivo">
                     <items>
@@ -36,40 +32,30 @@
             </menus>
         </MenuBar>
 
-        <ToolBar layoutX="0.0" layoutY="28.0" prefWidth="600.0">
+        <ToolBar layoutY="26.0" prefHeight="57.0" prefWidth="600.0">
             <items>
                 <Button text="Registrar cliente" />
                 <Button text="Consultar clientes" />
             </items>
         </ToolBar>
 
-        <Label layoutX="174.0" layoutY="102.0"
-               text="Ventana principal">
+        <Label layoutX="188.0" layoutY="109.0" text="Ventana principal">
             <font><Font size="24.0" /></font>
         </Label>
 
-        <Label layoutX="154.0" layoutY="142.0"
-               text="Seleccioná una opción para continuar" />
-
-        <Button layoutX="70.0" layoutY="187.0"
-                prefHeight="46.0" prefWidth="210.0"
-                text="Registrar cliente">
+        <Button layoutX="42.0" layoutY="187.0" prefHeight="46.0" prefWidth="210.0" text="Registrar cliente">
             <font><Font size="17.0" /></font>
         </Button>
 
-        <Button layoutX="320.0" layoutY="187.0"
-                prefHeight="46.0" prefWidth="210.0"
-                text="Consultar clientes">
+        <Button layoutX="335.0" layoutY="187.0" prefHeight="46.0" prefWidth="210.0" text="Consultar clientes">
             <font><Font size="17.0" /></font>
         </Button>
 
-        <Label layoutX="32.0" layoutY="263.0"
-               text="Actividad reciente">
+        <Label layoutX="32.0" layoutY="263.0" text="Actividad reciente">
             <font><Font size="16.0" /></font>
         </Label>
 
-        <ListView layoutX="32.0" layoutY="289.0"
-                  prefHeight="83.0" prefWidth="536.0">
+        <ListView layoutX="27.0" layoutY="288.0" prefHeight="83.0" prefWidth="547.0">
             <items>
                 <FXCollections fx:factory="observableArrayList">
                     <String fx:value="Menú principal abierto" />
@@ -78,8 +64,7 @@
             <contextMenu>
                 <ContextMenu>
                     <items>
-                        <MenuItem text="Copiar actividad seleccionada" />
-                        <MenuItem text="Limpiar historial" />
+                        <MenuItem text="actividad reciente" />
                     </items>
                 </ContextMenu>
             </contextMenu>

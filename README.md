@@ -1,5 +1,5 @@
 Sistema de consulta de clientes
-Integrantes: 
+  Integrantes: 
 María Alejandra Sarante Salinas 
 Luis Lenin Aguirre Vilchez
 Josue David Espinoza Ramirez

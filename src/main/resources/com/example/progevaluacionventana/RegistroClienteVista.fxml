@@ -37,8 +37,8 @@
             <Font name="Segoe UI" size="15.0" />
          </font>
       </Label>
-      <ComboBox fx:id="cmbTipoCliente" layoutX="177.0" layoutY="177.0" prefHeight="23.0" prefWidth="172.0" promptText="Ingrese su tipo de cliente.." />
-      <ComboBox fx:id="cmbCuidadCliente" layoutX="177.0" layoutY="215.0" prefHeight="23.0" prefWidth="172.0" promptText="Ingrese su cuidad..." />
+      <ComboBox fx:id="cmbTipoCliente" layoutX="177.0" layoutY="177.0" prefHeight="23.0" prefWidth="172.0" />
+      <ComboBox fx:id="cmbCuidadCliente" layoutX="177.0" layoutY="215.0" prefHeight="23.0" prefWidth="172.0" />
       <Label layoutX="21.0" layoutY="212.0" prefHeight="30.0" prefWidth="144.0" text="Cuidad : ">
          <font>
             <Font name="Segoe UI" size="15.0" />
@@ -55,17 +55,17 @@
             <Font name="Segoe UI" size="15.0" />
          </font>
       </Label>
-      <RadioButton layoutX="177.0" layoutY="309.0" mnemonicParsing="false" text="RadioButton" />
-      <RadioButton layoutX="276.0" layoutY="309.0" mnemonicParsing="false" text="RadioButton" />
-      <RadioButton layoutX="385.0" layoutY="309.0" mnemonicParsing="false" text="RadioButton" />
+      <RadioButton fx:id="rbAfilacion" layoutX="177.0" layoutY="309.0" mnemonicParsing="false" text="Afilacion" />
+      <RadioButton fx:id="rbConsulta" layoutX="263.0" layoutY="308.0" mnemonicParsing="false" text="Consulta" />
+      <RadioButton fx:id="rbReclamacion" layoutX="349.0" layoutY="309.0" mnemonicParsing="false" text="Reclamacion" />
       <Label layoutX="21.0" layoutY="343.0" prefHeight="30.0" prefWidth="144.0" text="Servicios de interes  :">
          <font>
             <Font name="Segoe UI" size="15.0" />
          </font>
       </Label>
-      <CheckBox layoutX="177.0" layoutY="350.0" mnemonicParsing="false" text="CheckBox" />
-      <CheckBox layoutX="276.0" layoutY="350.0" mnemonicParsing="false" text="CheckBox" />
-      <CheckBox layoutX="385.0" layoutY="350.0" mnemonicParsing="false" text="CheckBox" />
+      <CheckBox fx:id="chkSoporteTecnico" layoutX="177.0" layoutY="350.0" mnemonicParsing="false" text="Soporte técnico" />
+      <CheckBox fx:id="chkMantemientoDeEquipos" layoutX="298.0" layoutY="349.0" mnemonicParsing="false" text="Mantemiento de equipos" />
+      <CheckBox fx:id="chkDesarrolloWeb" layoutX="464.0" layoutY="349.0" mnemonicParsing="false" text="Desarrollo web" />
       <ImageView fitHeight="175.0" fitWidth="262.0" layoutX="428.0" layoutY="415.0" pickOnBounds="true" preserveRatio="true" />
       <Line endX="575.3999633789062" endY="-7.62939453125E-6" layoutX="114.0" layoutY="395.0" startX="-93.40000915527344" startY="-7.62939453125E-6" />
       <Label layoutX="20.0" layoutY="452.0" prefHeight="30.0" prefWidth="185.0" text="Seleccione su fotografia :">
@@ -73,8 +73,8 @@
             <Font name="Segoe UI" size="15.0" />
          </font>
       </Label>
-      <TextField layoutX="20.0" layoutY="491.0" prefHeight="23.0" prefWidth="314.0" />
-      <Button fx:id="btnSeleccionarFotoDirectorio" layoutX="345.0" layoutY="491.0" mnemonicParsing="false" text="Subir foto.." />
-      <Button fx:id="btnGuardarRegistroCliente" layoutX="307.0" layoutY="590.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="110.0" text="Guardar registro" />
+      <TextField fx:id="txtFotografia" layoutX="20.0" layoutY="491.0" prefHeight="23.0" prefWidth="314.0" promptText="Archivo formato PDF o PNG con la Cedula del cliente.." />
+      <Button fx:id="btnSeleccionarFotoDirectorio" layoutX="345.0" layoutY="491.0" mnemonicParsing="false" onAction="#selecionarFotografiaCliente" text="Subir foto.." />
+      <Button fx:id="btnGuardarRegistroCliente" layoutX="307.0" layoutY="590.0" mnemonicParsing="false" onAction="#guardarCliente" prefHeight="23.0" prefWidth="110.0" text="Guardar registro" />
    </children>
 </AnchorPane>
